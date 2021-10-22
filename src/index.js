@@ -89,7 +89,9 @@ const puppeteerConfig = {
   args: (!program.sandbox ? ['--no-sandbox'] : []).concat([
     '--disable-translate',
     '--disable-extensions',
-    '--disable-sync'
+    '--disable-sync',
+    '--allow-file-access-from-files',
+    '--enable-local-file-accesses'
   ])
 }
 
